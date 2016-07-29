@@ -16,7 +16,7 @@ def sort_array_char_count(array)
   end
 end
 
-def swap_elements(array)
+def swap_elements(array,index_1,index_2)
   array[1], array[2] = array[2], array[1]
   array
 end
@@ -48,6 +48,7 @@ def sum_array(array)
     sum+=num
   end
   sum
+end
 
   # using reduce method
     # array.reduce(:+)
@@ -59,7 +60,7 @@ def sum_array(array)
      # array.inject do |sum,x|
      #  sum + x
      # end
-end
+
 
 def add_s(array)
   array.collect do |word|
